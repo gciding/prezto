@@ -11,3 +11,17 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+# Virtualenv Wrapper Python 2.7
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Facebook Infer (temp)
+#PATH=$PATH:/Users/gorans/www/workspace/infer-osx-v0.1.0/infer/infer/bin
+
+# RBENV (gorans)
+eval "$(rbenv init -)"
+
+# NVM for Simon because he doesn't want to be on latest Node
+export NVM_DIR=~/.nvm
+. $(brew --prefix nvm)/nvm.sh
